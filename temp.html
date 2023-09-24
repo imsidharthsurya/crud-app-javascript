@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,tr,td,th{
+                border: 1px solid black;
+            }
+            td{
+                padding: 10px 20px;
+            }
+            .edit{
+                padding: 5px;
+                margin-right: 10px;
+                color: blueviolet;
+            }
+            .delete{
+                padding: 5px;
+                color: red;
+            }
+            .cl1{
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr class="cl0">
+                    <th id="cl0r0">userName</th>
+                    <th id="cl0r1">age</th>
+                    <th id="cl0r2">State</th>
+                    <th id="cl0r3">Modify</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="cl1" contenteditable="false">
+                    <td id="cl1r1">Sidharth surya</td>
+                    <td id="cl1r2">22</td>
+                    <td id="cl1r3">Bihar</td>
+                    <td contenteditable="false"><button id="e1" class="edit">edit</button><button id="btn1" class="delete dl1">delete1</button></td>
+                </tr>
+                <tr id="cl2" contenteditable="false">
+                    <td id="cl2r1">Yash</td>
+                    <td id="cl2r2">42</td>
+                    <td id="cl2r3">AP</td>
+                    <td contenteditable="false"><button id="e2" class="edit">edit</button><button id="btn2" class="delete dl2">delete2</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            var x=confirm("Do you wanna delete it?");
+            alert(x);
+            // var val=document.getElementById("cl2r3").innerText;
+            // alert(val);
+            // var data={
+            // }
+            // //if e5 gets clicked
+            // data[document.getElementById("cl0r0").innerText]=document.getElementById("cl5r0").innerText;
+
+            //code to edit a user
+        //    const edits = document.getElementsByClassName("edit");
+
+        //     const edtPressed = e => {
+        //         console.log(e.target.id[1]);  // Get ID of Clicked Element
+        //         var iid="cl"+e.target.id[1];    //id of the row
+        //         var did1=iid+"r1";               //id of name col of that row
+        //         var did2=iid+"r2";              //id of age col of that row
+        //         var did3=iid+"r3";              //id of state col of that row
+        //         console.log(iid);
+        //         console.log("did1: ",did1);
+        //         console.log("did2: ",did2);
+        //         console.log("did3: ", did3);
+        //         document.getElementById(iid).setAttribute("contenteditable","true");
+        //         document.addEventListener("keypress", function(event) {
+        //         if (event.keyCode === 13) {
+        //             // alert('Enter is pressed!');
+        //             event.preventDefault();
+        //             document.getElementById(iid).setAttribute("contenteditable","false");
+        //             var nm=document.getElementById(did1).innerText;
+        //             var ag=document.getElementById(did2).innerText;
+        //             var st=document.getElementById(did3).innerText;
+        //             console.log("name ",nm);
+        //             console.log("age ",ag);
+        //             console.log("state ",st);
+        //             // var data={
+        //             //     "userName":
+        //             // }
+        //         }
+        //     }); 
+        //     }
+
+        //     for (let edt of edits) {
+        //         edt.addEventListener("click", edtPressed);
+        //     }
+            
+            
+        </script>
+    </body>
+</html>

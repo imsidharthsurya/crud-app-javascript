@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <style>
+                table{
+                    margin:170px auto;
+                }
+                td{
+                    padding: 10px;
+                }
+                #sub{
+                    text-align: center;
+                }
+                .btn{
+                    padding: 10px 15px;
+                    color: white;
+                    background-color: green;
+                    border: none;
+                    border-radius: 4px;
+                }
+                body{
+                    margin: 0;
+                }
+                ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            li{
+                float: left;
+            }
+            li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 60px;
+        text-decoration: none;
+        }
+        li a:hover {
+        background-color: #111;
+        }
+            </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Add User</a></li>
+        </ul>
+        <div id="container">
+        <table>
+            <form id="userForm" action="#">
+            <tr>
+                <td><label>Your Name: </label></td>
+                <td><input type="text" required id="naam"></td>
+            </tr>
+            <tr>
+                <td><label>Your Age: </label></td>
+                <td><input type="text" required id="age"></td>
+            </tr>
+            <tr>
+                <td><label>Enter your State: </label></td>
+                <td><input type="text" required id="stat"></td>
+            </tr>
+            <tr>
+                <td id="sub" colspan="2"><button id="submit-form" class="btn">Submit</button></td>
+            </tr>
+            </form>
+        </table>
+        </div>
+        
+        
+        
+
+        <script src="frm.js"></script>
+    </body>
+</html>
